@@ -26,9 +26,13 @@ The REST API is described below.
 `GET /calculateDieselUsageForDistance?<distance>&<yearOfProduction>&<fuelUsagePer100KM>`
 
 where:
+
 distance = a positive integer (The unit of measurement is KM)
+
 yearOfProduction = a positive integer between 1900 and 2100
+
 fuelUsagePer100KM = a positive floating point number
+
 
 example: http://localhost:8000/calculateDieselUsageForDistance?distance=100&yearOfProduction=2000&fuelUsagePer100KM=6.5
 
@@ -38,6 +42,7 @@ Returns fuel consumption on specified distance.
 `GET /probabilityOfUnitInjectorFail?<vin>`
 
 where:
+
 vin = a string of 11-17 characters
 
 example: http://localhost:8000/probabilityOfUnitInjectorFail?vin=1234567890abcdef
